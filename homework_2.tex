@@ -236,4 +236,17 @@ Does the limit exist at $x = 0$, $x = 1$, or $x = 2$?
 \subsection*{Solution}
 We have shown that because of the discontinuity, the function is not continuous at $x = 1$. However, there is no discontinuity at $x = 0$ or $x = 2$ and the limit is equal to the function evaluated at each of these points, so the function is continuous in those places.
 
+
+
+\section*{2.2.8}
+
+\subsection*{Problem}
+Prove that
+\begin{align*}
+    \lim_{x \to 0^-} \frac{\abs{x}}{x} = -1
+\end{align*}
+
+\subsection*{Solution}
+$\forall \epsilon > 0, \exists \delta = 1, \forall x : 0 < 0 - x < \delta \implies \abs{\frac{\abs{x}}{x} - (-1)} = \abs{\frac{-x}{x} + 1} = \abs{-1 + 1} = 0 < \epsilon$.
+
 \end{document}
