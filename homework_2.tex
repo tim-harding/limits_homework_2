@@ -7,6 +7,9 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+
+\graphicspath{ {./images/} }
 
 \newcommand{\curly}[1]{\left\{      #1 \right\}     }
 \newcommand{\round}[1]{\left(       #1 \right)      }
@@ -181,5 +184,56 @@ Prove that $\sqrt{x}$ is continuous on $(0, \infty)$.
     \item Trivially, $\sqrt{x}$ exists for all inputs in the range $(0, \infty)$.
     \item We now show that the limit $\lim_{x \to a} \sqrt{x}$ exists for all $a$ in $(0, \infty)$. $\forall \epsilon,\ \exists \delta = arst : 0 < \abs{x - a} < \delta \implies \abs{\sqrt{x} - \sqrt{a}} < \epsilon$
 \end{enumerate}
+
+
+
+\section*{2.2.6.a}
+
+\subsection*{Problem}
+Given
+\begin{align*}
+    f(x) = \begin{cases}
+        4x + 7 & x < 1 \\
+        -2x + 12.99 & x \geq 1
+    \end{cases}
+\end{align*}
+Graph the function.
+
+\subsection*{Solution}
+\begin{center}
+\includegraphics[width=8cm]{2.2.6}
+\end{center}
+
+
+
+\section*{2.2.6.b}
+
+\subsection*{Problem}
+Find the two one-sided limits
+
+\begin{enumerate}
+    \item To show that $\lim_{x \to 1^{-}} f(x) = 11$, we show that $\forall \epsilon > 0,\ \exists \delta = \min\round{1,\ \frac{\epsilon}{4}},\ \forall x : 0 < 1 - x < \delta \implies \abs{4x + 7 - 11} = \abs{4x - 4} = 4\abs{x - 1} = 4 \abs{1 - x} < \epsilon$.
+    \item To show that $\lim_{x \to 1^{+}} f(x) = 10.99$, we show that $\forall \epsilon > 0,\ \exists \delta = \min\round{1,\ \frac{\epsilon}{2}},\ \forall x : 0 < x - 1 < \delta \implies \abs{2x + 12.99 - 10.99} = \abs{2x - 2} = 2\abs{x - 1} < \epsilon$.
+\end{enumerate}
+
+
+
+\section*{2.2.6.c}
+
+\subsection*{Problem}
+What can be said about $\lim_{x \to 1} f(x)$?
+
+\subsection*{Solution}
+The limit does not exist because $\lim_{x \to 1^-} f(x) \neq \lim_{x \to 1^+} f(x)$.
+
+
+
+\section{2.2.6.d}
+
+\subsection*{Problem}
+Does the limit exist at $x = 0$, $x = 1$, or $x = 2$?
+
+\subsection*{Solution}
+We have shown that because of the discontinuity, the function is not continuous at $x = 1$. However, there is no discontinuity at $x = 0$ or $x = 2$ and the limit is equal to the function evaluated at each of these points, so the function is continuous in those places.
 
 \end{document}
