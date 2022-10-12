@@ -116,6 +116,21 @@ The solution from part a is the largest possible choice of $\delta$, $\boxed{0.0
 
 
 \section*{2.1.12}
+
+\subsection*{Problem}
+Find $L$ such that
+\begin{align*}
+    \lim_{x \to -2} \round{x^2 - 2x + 4} = L
+\end{align*}
+and prove it.
+
+\subsection*{Solution}
+The limit is $L = (-2)^2 - 2(-2) + 4 = 4 + 4 + 4 = 12$. For proof,
+
+$\forall \epsilon > 0,\ \exists \delta = \min(\frac{\epsilon}{7}, 1),\ \forall x : 0 < \abs{x - (-2)} < \delta \implies \\ \abs{x^2 - 2x + 4 - (-2)} = \abs{x^2 - 2x + 8} = \abs{x + 2} \abs{x - 4} \leq 7 \abs{x - (-2)} < \epsilon$.
+
+
+
 \section*{2.1.15}
 \section*{2.1.16}
 \section*{2.1.18}
