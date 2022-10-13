@@ -170,7 +170,7 @@ Prove that
 \end{align*}
 
 \subsection*{Solution}
-$\forall \epsilon > 0, \exists \delta = \min\round{\frac{3}{2}, \epsilon}$ st $\forall x : 0 < \abs{x - 1} < \delta \implies \abs{\frac{1}{x + 1} - \frac{1}{2}} = \abs{\frac{2 - (x + 1)}{2(x + 1)}} = \abs{\frac{-x + 1}{2(x + 1)}} = \abs{x - 1} \frac{1}{2} \abs{\frac{1}{x + 1}} < \abs{x - 1} < \epsilon$
+$\forall \epsilon > 0,\ \exists \delta = \min\round{\frac{3}{2},\ \epsilon}$ st $\forall x : 0 < \abs{x - 1} < \delta \implies \abs{\frac{1}{x + 1} - \frac{1}{2}} = \abs{\frac{2 - (x + 1)}{2(x + 1)}} = \abs{\frac{-x + 1}{2(x + 1)}} = \abs{x - 1} \frac{1}{2} \abs{\frac{1}{x + 1}} < \abs{x - 1} < \epsilon$
 
 
 
@@ -182,7 +182,7 @@ Prove that $\sqrt{x}$ is continuous on $(0, \infty)$.
 \subsection*{Solution}
 \begin{enumerate}
     \item Trivially, $\sqrt{x}$ exists for all inputs in the range $(0, \infty)$.
-    \item We now show that the limit $\lim_{x \to a} \sqrt{x}$ exists for all $a$ in $(0, \infty)$. $\forall \epsilon,\ \exists \delta = arst : 0 < \abs{x - a} < \delta \implies \abs{\sqrt{x} - \sqrt{a}} < \epsilon$
+    \item We now show that the limit $\lim_{x \to a} \sqrt{x} = \sqrt{a}$ for all $a$ in $(0, \infty)$. $\forall \epsilon,\ \exists \delta = arst : 0 < \abs{x - a} < \delta \implies \abs{\sqrt{x} - \sqrt{a}} = \abs{\round{\sqrt{x} - \sqrt{a}} \frac{\sqrt{x} + \sqrt{a}}{\sqrt{x} + \sqrt{a}}} = \abs{\frac{x - a}{\sqrt{x} - \sqrt{a}}} = \abs{x - a} \frac{1}{\abs{\sqrt{x} - \sqrt{a}}} < \epsilon$
 \end{enumerate}
 
 
@@ -212,8 +212,8 @@ Graph the function.
 Find the two one-sided limits
 
 \begin{enumerate}
-    \item To show that $\lim_{x \to 1^{-}} f(x) = 11$, we show that $\forall \epsilon > 0,\ \exists \delta = \min\round{1,\ \frac{\epsilon}{4}},\ \forall x : 0 < 1 - x < \delta \implies \abs{4x + 7 - 11} = \abs{4x - 4} = 4\abs{x - 1} = 4 \abs{1 - x} < \epsilon$.
-    \item To show that $\lim_{x \to 1^{+}} f(x) = 10.99$, we show that $\forall \epsilon > 0,\ \exists \delta = \min\round{1,\ \frac{\epsilon}{2}},\ \forall x : 0 < x - 1 < \delta \implies \abs{2x + 12.99 - 10.99} = \abs{2x - 2} = 2\abs{x - 1} < \epsilon$.
+    \item To show that $\lim_{x \to 1^{-}} f(x) = 11$, we show that $\forall \epsilon > 0,\ \exists \delta = \frac{\epsilon}{4},\ \forall x : 0 < 1 - x < \delta \implies \abs{4x + 7 - 11} = \abs{4x - 4} = 4\abs{x - 1} = 4 \abs{1 - x} = 4 (1 - x) < \epsilon$.
+    \item To show that $\lim_{x \to 1^{+}} f(x) = 10.99$, we show that $\forall \epsilon > 0,\ \exists \delta = \frac{\epsilon}{2},\ \forall x : 0 < x - 1 < \delta \implies \abs{2x + 12.99 - 10.99} = \abs{2x - 2} = 2\abs{x - 1} = 2(x - 1) < \epsilon$.
 \end{enumerate}
 
 
@@ -247,7 +247,7 @@ Prove that
 \end{align*}
 
 \subsection*{Solution}
-$\forall \epsilon > 0, \exists \delta = 1, \forall x : 0 < 0 - x < \delta \implies \abs{\frac{\abs{x}}{x} - (-1)} = \abs{\frac{-x}{x} + 1} = \abs{-1 + 1} = 0 < \epsilon$.
+$\forall \epsilon > 0,\ \exists \delta = 1,\ \forall x : 0 < 0 - x < \delta \implies \abs{\frac{\abs{x}}{x} - (-1)} = \abs{\frac{-x}{x} + 1} = \abs{-1 + 1} = 0 < \epsilon$.
 
 
 
