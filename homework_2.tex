@@ -66,13 +66,12 @@ $\exists \epsilon_0 = \frac{1}{2},\ \forall x,\ \exists x_0 = 2 \pi \ceil{\abs{x
 \section*{2.1.8}
 
 \subsection*{Problem}
-
 Negate the following definition:
 
 $\forall \epsilon > 0,\ \exists \delta \in (0, \delta_0],\ \forall x : 0 < \abs{x - x_0} < \delta \implies \abs{f(x) - L} < \epsilon$.
 
 \subsection*{Solution}
-$\exists \epsilon > 0,\ \forall \delta \in (0, \delta_0],\ \exists x : 0 < \abs{x - x_0} < \delta \implies \abs{f(x) - L} > \epsilon$.
+$\exists \epsilon > 0,\ \forall \delta \in (0, \delta_0],\ \exists x : 0 < \abs{x - x_0} < \delta \implies \abs{f(x) - L} \geq \epsilon$.
 
 
 
@@ -149,7 +148,14 @@ $f(x)$ is continuous where the limit and $f(x_0)$ both exist and are equal, whic
 \section*{2.1.15.c}
 
 \subsection*{Problem}
-Prove parts (a) and (b)
+Show parts (a) and (b) rigorously.
+
+\subsection*{Solution}
+We first need to show that
+\begin{align*}
+    \lim_{x \to a} \frac{1}{x} = \frac{1}{a}
+\end{align*}
+$\forall \epsilon > 0,\ \exists \delta = \frac{\epsilon \abs{a}^2}{2},\ \forall x : 0 < \abs{x - a} < \delta,\ x \neq 0 \implies \abs{\frac{1}{x} - \frac{1}{a}} = \abs{\frac{a - x}{ax}} = \abs{x - a} \abs{\frac{1}{ax}} < \abs{x - a} \abs{\frac{1}{a \frac{a}{2}}} = \abs{x - a} \frac{2}{\abs{a}^2} < \epsilon$.
 
 
 
